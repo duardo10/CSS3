@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: blueviolet;
+        }
+
+        .especial::before{
+            content: '->';
+        }
+
+        .especial::after{
+            content: '<-';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgoldenrod;
+        }
+
+        .especial{
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://instagran.com/luis_eduardo_0612?igshid=YmMyMTA2M2Y=">Instagran</a></li>
+        <li><a href="https://wa.me/5589981209282">WatsApp</a></li>
+        <li><a href="http://www.youtube.com/@user-zd7fv1hb2t" class="especial">You Tube</a></li>
+    </ul>
+    
+</body>
+</html>
